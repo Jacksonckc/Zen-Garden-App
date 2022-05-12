@@ -33,7 +33,7 @@ section {
   }
   > figure {
     margin: 0;
-    flex: 1 1 25%;
+    flex: 1 1 20%;
   }
 }
 .swatch {
@@ -49,6 +49,12 @@ section {
 }
 .accent2 {
   background-color: $accent2;
+}
+.accent3 {
+  background-color: $accent3;
+}
+.accent4 {
+  background-color: $accent4;
 }
 .text-dark {
   background-color: $text-dark;
