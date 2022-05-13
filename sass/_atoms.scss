@@ -31,21 +31,27 @@ h4 {
   margin: 0;
 }
 h1 {
-  background: $accent1;
+  background: $primary;
   color: $text-light;
   display: inline-block;
-  font-weight: normal;
+  font-weight: 900; /* Heavy */
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  font-size: 50px;
+  font-family: $fonts-headline;
 }
 h2 {
+  display: inline-block;
   color: $text-light;
-  font-weight: 900; /* Heavy */
-  font-size: 6em;
+  background-color: $accent2;
+  font-family: $fonts-headline;
+  font-size: 40px;
+  padding: 0.5em;
   letter-spacing: 1px;
   line-height: 1em;
 }
 h3 {
+  font-family: $fonts-headline;
   font-size: 2.25em;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
