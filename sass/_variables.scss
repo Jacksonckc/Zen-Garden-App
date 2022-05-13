@@ -1,5 +1,7 @@
-$fonts-headline: 'arial narrow', Arial, Verdana, sans-serif;
-$fonts-body: verdana, arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lato:wght@300;400;700&display=swap');
+
+$fonts-headline: Cinzel, serif;
+$fonts-body: Lato, Verdana, Arial, sans-serif;
 $background-color: #daede2;
 $primary: #dbc2cf;
 $accent1: #9fa2b2;
