@@ -1,0 +1,21 @@
+{
+  "name": "zen-garden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-style": "sass -w sass/style.scss:style.css",
+    "watch-pattern": "sass -w sass/style-pattern.scss:style-pattern.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddiemcconkie/zen-garden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddiemcconkie/zen-garden/issues"
+  },
+  "homepage": "https://github.com/eddiemcconkie/zen-garden#readme"
+}
