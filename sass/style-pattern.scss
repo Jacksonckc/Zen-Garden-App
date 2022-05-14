@@ -68,5 +68,5 @@ section {
   @include atoms.uppercase;
 }
 .uppercase-light {
-  @include atoms.uppercase($text-light);
+  @include atoms.uppercase($accent2);
 }
