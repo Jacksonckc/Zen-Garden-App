@@ -1,21 +1,41 @@
-@use "variables" as *; //this puts all the variables in the global namespace.
+@use 'variables' as *; //this puts all the variables in the global namespace.
 // @use 'atoms';
-//@use 'molecules';
-//@use 'organisms' as o;
-
-* {
-  box-sizing: border-box;
-}
-html {
-  background-color: $background-color;
-  padding: 5%;
-}
+// @use 'molecules' as m;
+// @use 'organisms' as o;
 
 body {
-  font-family: $fonts-body;
-  font-size: 85%;
-  color: $text-dark;
-  background-color: $primary;
-  margin: 0;
-  padding: 1em;
+  color: white;
+}
+
+body::after {
+  content: url('./Img/Astronauts-removebg-preview.png');
+  position: fixed;
+  z-index: 1;
+  right: -150px;
+  top: 10px;
+  transform: rotate(-25deg) scale(0.5);
+  animation: astronaut 4s infinite linear;
+}
+
+@keyframes astronaut {
+  25% {
+    transform: rotate(10deg) translate(0, -20px) scale(0.5);
+  }
+  50% {
+    transform: rotate(-25deg) translate(0, 20px) scale(0.5);
+  }
+  75% {
+    transform: rotate(10deg) translate(0, -20px) scale(0.5);
+  }
+}
+
+.page-wrapper {
+  background-image: url('./Img/stars-background.jpeg');
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  // @media screen and (max-width: 770px) {
+  //   background-size: 100vh;
+  // }
 }
