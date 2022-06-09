@@ -15,7 +15,7 @@ body {
   font-family: $fonts-body;
   font-size: 85%;
   color: $text-dark;
-  background-color: $primary;
+  background-color: $accent1;
   margin: 0;
   padding: 1em;
 }
@@ -42,7 +42,7 @@ section {
   border: 1px solid;
 }
 .primary {
-  background-color: $primary;
+  background-color: $accent4;
 }
 .accent1 {
   background-color: $accent1;
@@ -68,5 +68,5 @@ section {
   @include atoms.uppercase;
 }
 .uppercase-light {
-  @include atoms.uppercase($accent2);
+  @include atoms.uppercase(white);
 }
