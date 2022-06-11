@@ -1,0 +1,14 @@
+// Astronaut
+body::before {
+  content: url('./Img/Astronauts-removebg-preview.png');
+  position: fixed;
+  z-index: 1;
+  right: -400px;
+  top: -200px;
+  transform: scale(0.5);
+
+  animation-name: astronaut, flying;
+  animation-duration: 1s, 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite, infinite;
+}
