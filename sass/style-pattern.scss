@@ -25,6 +25,7 @@ section {
   padding: 1em;
   margin: 1em;
 }
+
 .colors {
   @include atoms.set-flex();
   > h3 {
