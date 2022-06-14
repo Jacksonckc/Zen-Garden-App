@@ -1,5 +1,7 @@
 @use 'modern-css-reset';
-@use 'variables' as *; //this puts all the variables in the global namespace.
+@use 'variables' as *;
+@use 'elements';
+@use 'animations';
 @import url(https://fonts.googleapis.com/css?family=Cinzel:regular);
 @import url(https://fonts.googleapis.com/css?family=Lato:regular,bold);
 // @use 'atoms';
@@ -7,8 +9,10 @@
 // @use 'organisms' as o;
 
 body {
-  color: white;
   font-family: Lato, sans-serif;
+  margin: 0;
+  color: $text-light;
+  font-size: x-large;
 }
 
 body::after {
@@ -46,14 +50,12 @@ h3 {
 }
 
 .page-wrapper {
+  padding: 5px;
   background-image: url('./Img/stars-background.jpeg');
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  // @media screen and (max-width: 770px) {
-  //   background-size: 100vh;
-  // }
   display: flex;
   flex-direction: column;
 }

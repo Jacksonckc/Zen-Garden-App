@@ -1,0 +1,22 @@
+@keyframes astronaut {
+  50% {
+    transform: translateY(20px) rotate(-25deg) scale(0.5);
+  }
+}
+
+@keyframes flying {
+  0% {
+    z-index: 1;
+  }
+  49% {
+    transform: translate(-150vw, 140vh) scale(0.5);
+    z-index: 1;
+  }
+  50% {
+    transform: translate(-150vw, -40vh) scale(0.5);
+    z-index: 3;
+  }
+  99% {
+    transform: translate(0vw, 100vh) scale(0.5);
+  }
+}
