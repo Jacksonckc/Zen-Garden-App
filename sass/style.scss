@@ -1,31 +1,47 @@
+@use 'modern-css-reset';
 @use 'variables' as *; //this puts all the variables in the global namespace.
+@import url(https://fonts.googleapis.com/css?family=Cinzel:regular);
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,bold);
 // @use 'atoms';
 // @use 'molecules' as m;
 // @use 'organisms' as o;
 
 body {
   color: white;
+  font-family: Lato, sans-serif;
 }
 
 body::after {
   content: url('./Img/Astronauts-removebg-preview.png');
   position: fixed;
   z-index: 1;
-  right: -150px;
+  right: 150px;
   top: 10px;
   transform: rotate(-25deg) scale(0.5);
-  animation: astronaut 4s infinite linear;
+  animation: astronaut 30s infinite ease-in-out;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Cinzel, serif;
 }
 
 @keyframes astronaut {
+  0% {
+    transform: rotate(-25deg);
+  }
   25% {
-    transform: rotate(10deg) translate(0, -20px) scale(0.5);
+    transform: rotate(10deg);
   }
   50% {
-    transform: rotate(-25deg) translate(0, 20px) scale(0.5);
+    transform: rotate(-25deg);
   }
   75% {
-    transform: rotate(10deg) translate(0, -20px) scale(0.5);
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-25deg);
   }
 }
 
@@ -38,4 +54,23 @@ body::after {
   // @media screen and (max-width: 770px) {
   //   background-size: 100vh;
   // }
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 50rem;
+  margin-inline: auto;
+
+  & > [role='article'] {
+    background-color: #a1b1ba;
+    width: 100%;
+
+    h3 {
+      background-color: #2e4756;
+    }
+  }
 }
