@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lato:wght@300;400;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Cinzel:regular);
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,bold);
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-$fonts-headline: Cinzel, serif;
+$fonts-headline: 'Cinzel', serif;
+$fonts-h3: 'Press Start 2P', cursive;
 $fonts-body: Lato, Verdana, Arial, sans-serif;
 $background-color: #daede2;
 $primary: #dbc2cf;
-$accent1: #9fa2b2;
+$background-article: rgb(161, 177, 186, 0.5);
 $accent2: #3c7a89;
 $accent3: #16262e;
 $accent4: #2e4756;

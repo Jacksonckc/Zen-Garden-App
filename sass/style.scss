@@ -2,8 +2,6 @@
 @use 'variables' as *;
 @use 'elements';
 @use 'animations';
-@import url(https://fonts.googleapis.com/css?family=Cinzel:regular);
-@import url(https://fonts.googleapis.com/css?family=Lato:regular,bold);
 
 body {
   font-family: Lato, sans-serif;
@@ -28,7 +26,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Cinzel, serif;
+  font-family: $fonts-headline;
   // font-variation-settings: 'wght' 3000;
 }
 
@@ -49,13 +47,19 @@ h3 {
   gap: 2rem;
   max-width: 50rem;
   margin-inline: auto;
-
   & > [role='article'] {
-    background-color: #a1b1ba;
+    background-color: $background-article;
     width: 100%;
 
+    > * {
+      padding: 5px 10px;
+    }
+    p::first-letter {
+      font-size: xx-large;
+    }
     h3 {
       background-color: #2e4756;
+      font-family: $fonts-h3;
     }
   }
 }
