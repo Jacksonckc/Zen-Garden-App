@@ -1,11 +1,14 @@
 @keyframes astronaut {
+  0% {
+    transform: translateX(-200px);
+  }
   100% {
-    transform: translate(150vw, 20px);
+    transform: translateX(100vw);
   }
 }
 
-// @keyframes wiggle {
-//   50% {
-//     transform: rotate(-25deg);
-//   }
-// }
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
