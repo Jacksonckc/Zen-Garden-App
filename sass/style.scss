@@ -2,8 +2,6 @@
 @use 'variables' as *;
 @use 'elements';
 @use 'animations';
-@import url(https://fonts.googleapis.com/css?family=Cinzel:regular);
-@import url(https://fonts.googleapis.com/css?family=Lato:regular,bold);
 
 body {
   font-family: Lato, sans-serif;
@@ -29,7 +27,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Cinzel, serif;
+  font-family: $fonts-headline;
+  // font-variation-settings: 'wght' 3000;
 }
 
 .page-wrapper {
@@ -49,13 +48,19 @@ h3 {
   gap: 2rem;
   max-width: 50rem;
   margin-inline: auto;
-
   & > [role='article'] {
     background-color: #c2d0d8;
+    // background-color: $background-article;
     width: 100%;
     border-radius: 2px 4px 2px 4px;
     overflow: hidden;
 
+    > * {
+      padding: 5px 10px;
+    }
+    p::first-letter {
+      font-size: xx-large;
+    }
     h3 {
       background-color: #2e4756;
       font-size: 1.8rem;
@@ -65,11 +70,13 @@ h3 {
     p {
       font-size: 1.2rem;
       margin: 0.6rem 1rem 1rem;
+      padding: 0;
       color: $text-dark;
 
       > a {
         color: $accent4;
       }
+      // font-family: $fonts-h3;
     }
   }
 }
