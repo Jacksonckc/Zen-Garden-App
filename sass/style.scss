@@ -51,11 +51,29 @@ h1 {
 }
 
 footer {
-  padding: 10px;
+  padding: 10px 30%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: black;
 }
+
 .wrapper {
-  display: flex;
-  justify-content: space-between;
+  padding-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+  justify-content: space-around;
+  background-image: url(../Img/end-background.jpeg);
+  background-size: cover;
+  > * {
+    text-align: center;
+    height: var(--s2);
+    overflow: hidden;
+    transition: 3s ease;
+    &:hover {
+      height: 700px;
+    }
+  }
 }
