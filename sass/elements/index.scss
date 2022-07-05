@@ -1,5 +1,6 @@
 @forward 'cards';
 @forward 'requirements';
+@forward 'sidebar';
 
 header {
   margin-bottom: 80px;
@@ -28,9 +29,9 @@ header h2 {
   height: 260px;
 }
 .summary p {
-  float:right;
-  margin-right:10%;
-  width:600px;
+  float: right;
+  margin-right: 10%;
+  width: 600px;
 }
 .summary p:nth-child(2) {
   margin-top: 10px;
