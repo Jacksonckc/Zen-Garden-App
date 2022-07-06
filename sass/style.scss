@@ -22,16 +22,24 @@ p {
   line-height: 1.8;
 }
 
+a {
+  color: $dark-pink;
+}
+
+abbr {
+  text-decoration: none;
+}
+
 h1 {
   background-image: linear-gradient(
     -225deg,
-    #231557 0%,
-    #44107a 15%,
-    #ff1361 35%,
-    #fff800 50%,
-    #ff1361 65%,
-    #44107a 85%,
-    #231557 100%
+    $accent1 0%,
+    $accent2 15%,
+    $accent3 35%,
+    $accent4 50%,
+    $accent3 65%,
+    $accent2 85%,
+    $accent1 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -41,13 +49,6 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 4s linear infinite;
-}
-
-// Astronaut
-.main::after {
-  content: url('Img/Astronauts-removebg-preview.png');
-  animation: astronaut 10s infinite linear;
-  order: -1;
 }
 
 footer {

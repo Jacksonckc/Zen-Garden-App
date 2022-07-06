@@ -6,7 +6,7 @@
     grid-template-columns: 1fr;
   }
   justify-content: space-around;
-  background-image: url(../../Img/end-background.jpeg);
+  background-image: url(../../Img/footer_background.jpeg);
   background-size: cover;
   > * {
     text-align: center;
@@ -15,6 +15,9 @@
     transition: 3s ease;
     &:hover {
       height: 800px;
+    }
+    li {
+      list-style: none;
     }
   }
 }
