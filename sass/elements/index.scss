@@ -1,5 +1,7 @@
 @forward 'cards';
 @forward 'requirements';
+@forward 'sidebar';
+@forward 'astronaut';
 
 header {
   margin-bottom: 80px;
@@ -21,13 +23,16 @@ header h2 {
 }
 
 .summary {
+  position: relative;
   background-color: #0e171c;
   opacity: 80%;
   padding: 40px 0 40px 0;
+  height: 260px;
 }
 .summary p {
-  text-align: center;
-  margin: 0 15%;
+  float: right;
+  margin-right: 10%;
+  width: 600px;
 }
 .summary p:nth-child(2) {
   margin-top: 10px;
@@ -37,6 +42,8 @@ a {
   color: white;
 }
 .preamble {
+  width: 800px;
   text-align: center;
-  margin: 40px 15%;
+  // margin: 40px 15%;
+  margin: 40px auto;
 }

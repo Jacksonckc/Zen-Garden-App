@@ -1,0 +1,5 @@
+.main::after {
+  content: url('Img/Astronauts-removebg-preview.png');
+  animation: astronaut 10s infinite linear;
+  order: -1;
+}

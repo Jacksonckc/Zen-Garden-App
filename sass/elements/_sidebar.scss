@@ -1,0 +1,23 @@
+.wrapper {
+  padding-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+  justify-content: space-around;
+  background-image: url(../../Img/footer_background.jpeg);
+  background-size: cover;
+  > * {
+    text-align: center;
+    height: var(--s2);
+    overflow: hidden;
+    transition: 3s ease;
+    &:hover {
+      height: 800px;
+    }
+    li {
+      list-style: none;
+    }
+  }
+}
