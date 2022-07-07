@@ -1,9 +1,75 @@
 @keyframes astronaut {
+  // First pass
   0% {
-    transform: translateX(-200px);
+    transform: translateX(calc(-50vw - 100px)) rotate(0deg);
+    visibility: visible;
+  }
+  24.7% {
+    transform: translateX(calc(50vw + 100px)) rotate(45deg);
+    visibility: visible;
+  }
+  24.8% {
+    transform: translateX(calc(50vw + 100px));
+    visibility: hidden;
+  }
+  24.9% {
+    transform: translateX(calc(-50vw - 100px));
+    visibility: hidden;
+  }
+  25% {
+    transform: translateX(calc(-50vw - 100px)) rotate(90deg);
+    visibility: visible;
+  }
+  // Second pass
+  49.7% {
+    transform: translateX(calc(50vw + 100px)) rotate(135deg);
+    visibility: visible;
+  }
+  49.8% {
+    transform: translateX(calc(50vw + 100px));
+    visibility: hidden;
+  }
+  49.9% {
+    transform: translateX(calc(-50vw - 100px));
+    visibility: hidden;
+  }
+  50% {
+    transform: translateX(calc(-50vw - 100px)) rotate(180deg);
+    visibility: visible;
+  }
+  // Third pass
+  74.7% {
+    transform: translateX(calc(50vw + 100px)) rotate(225deg);
+    visibility: visible;
+  }
+  74.8% {
+    transform: translateX(calc(50vw + 100px));
+    visibility: hidden;
+  }
+  74.9% {
+    transform: translateX(calc(-50vw - 100px));
+    visibility: hidden;
+  }
+  75% {
+    transform: translateX(calc(-50vw - 100px)) rotate(270deg);
+    visibility: visible;
+  }
+  // Fourth pass
+  99.7% {
+    transform: translateX(calc(50vw + 100px)) rotate(315deg);
+    visibility: visible;
+  }
+  99.8% {
+    transform: translateX(calc(50vw + 100px));
+    visibility: hidden;
+  }
+  99.9% {
+    transform: translateX(calc(-50vw - 100px));
+    visibility: hidden;
   }
   100% {
-    transform: translateX(100vw);
+    transform: translateX(calc(-50vw - 100px)) rotate(0deg);
+    visibility: visible;
   }
 }
 

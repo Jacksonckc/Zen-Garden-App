@@ -1,5 +1,16 @@
+@use '../breakpoints';
+
 .main::after {
   content: url('Img/Astronauts-removebg-preview.png');
-  animation: astronaut 10s infinite linear;
+  animation: astronaut infinite linear;
+  animation-duration: 60s;
+  @include breakpoints.medium {
+    animation-duration: 90s;
+  }
+  @include breakpoints.large {
+    animation-duration: 120s;
+  }
+  text-align: center;
   order: -1;
+  z-index: 1;
 }
