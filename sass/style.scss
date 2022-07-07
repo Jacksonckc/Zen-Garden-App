@@ -52,8 +52,12 @@ h1 {
 }
 
 footer {
-  padding: 10px 30%;
+  padding: 10px 20%;
   display: flex;
   justify-content: space-around;
   background-color: black;
+  margin-top: calc(-1 * var(--s3));
+  > * {
+    padding: 0 5px;
+  }
 }
