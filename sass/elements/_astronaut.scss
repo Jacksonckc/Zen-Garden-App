@@ -2,13 +2,18 @@
 
 .main::after {
   content: url('Img/Astronauts-removebg-preview.png');
+  --start: calc(-50vw - 100px);
+  --end: calc(50vw + 100px);
+  --rotation: 45deg;
   animation: astronaut infinite linear;
   animation-duration: 60s;
   @include breakpoints.medium {
     animation-duration: 90s;
+    --rotation: 60deg;
   }
   @include breakpoints.large {
     animation-duration: 120s;
+    --rotation: 90deg;
   }
   text-align: center;
   order: -1;

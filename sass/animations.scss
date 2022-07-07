@@ -1,74 +1,74 @@
 @keyframes astronaut {
   // First pass
   0% {
-    transform: translateX(calc(-50vw - 100px)) rotate(0deg);
+    transform: translateX(var(--start)) rotate(0deg);
     visibility: visible;
   }
   24.7% {
-    transform: translateX(calc(50vw + 100px)) rotate(60deg);
+    transform: translateX(var(--end)) rotate(calc(0deg + var(--rotation)));
     visibility: visible;
   }
   24.8% {
-    transform: translateX(calc(50vw + 100px));
+    transform: translateX(var(--end));
     visibility: hidden;
   }
   24.9% {
-    transform: translateX(calc(-50vw - 100px));
+    transform: translateX(var(--start));
     visibility: hidden;
   }
   25% {
-    transform: translateX(calc(-50vw - 100px)) rotate(90deg);
+    transform: translateX(var(--start)) rotate(90deg);
     visibility: visible;
   }
   // Second pass
   49.7% {
-    transform: translateX(calc(50vw + 100px)) rotate(150deg);
+    transform: translateX(var(--end)) rotate(calc(90deg + var(--rotation)));
     visibility: visible;
   }
   49.8% {
-    transform: translateX(calc(50vw + 100px));
+    transform: translateX(var(--end));
     visibility: hidden;
   }
   49.9% {
-    transform: translateX(calc(-50vw - 100px));
+    transform: translateX(var(--start));
     visibility: hidden;
   }
   50% {
-    transform: translateX(calc(-50vw - 100px)) rotate(180deg);
+    transform: translateX(var(--start)) rotate(180deg);
     visibility: visible;
   }
   // Third pass
   74.7% {
-    transform: translateX(calc(50vw + 100px)) rotate(240deg);
+    transform: translateX(var(--end)) rotate(calc(180deg + var(--rotation)));
     visibility: visible;
   }
   74.8% {
-    transform: translateX(calc(50vw + 100px));
+    transform: translateX(var(--end));
     visibility: hidden;
   }
   74.9% {
-    transform: translateX(calc(-50vw - 100px));
+    transform: translateX(var(--start));
     visibility: hidden;
   }
   75% {
-    transform: translateX(calc(-50vw - 100px)) rotate(270deg);
+    transform: translateX(var(--start)) rotate(270deg);
     visibility: visible;
   }
   // Fourth pass
   99.7% {
-    transform: translateX(calc(50vw + 100px)) rotate(330deg);
+    transform: translateX(var(--end)) rotate(calc(270deg + var(--rotation)));
     visibility: visible;
   }
   99.8% {
-    transform: translateX(calc(50vw + 100px));
+    transform: translateX(var(--end));
     visibility: hidden;
   }
   99.9% {
-    transform: translateX(calc(-50vw - 100px));
+    transform: translateX(var(--start));
     visibility: hidden;
   }
   100% {
-    transform: translateX(calc(-50vw - 100px)) rotate(0deg);
+    transform: translateX(var(--start)) rotate(0deg);
     visibility: visible;
   }
 }
