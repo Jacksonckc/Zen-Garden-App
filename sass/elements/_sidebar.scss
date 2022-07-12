@@ -1,13 +1,16 @@
 .wrapper {
+  padding-top: 50px;
   padding-bottom: 200px;
   display: grid;
-  grid-template-columns: repeat(3, 250px);
-  @media screen and (max-width: 800px) {
+  grid-template-columns: repeat(3, 350px);
+  @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
   }
   justify-content: space-around;
-  background-image: url(../../Img/footer_background.jpeg);
+  background-image: linear-gradient(black, transparent 100px),
+    url(../../Img/footer_background.jpeg);
   background-size: cover;
+  background-position: center;
   > * {
     text-align: center;
     height: var(--s2);
@@ -15,8 +18,8 @@
     transition: 3s ease;
     &:first-child:hover {
       height: 400px;
-      @media screen and (min-width: 800px) {
-        height: 800px;
+      @media screen and (min-width: 1000px) {
+        height: 400px;
       }
     }
     &:nth-child(2):hover {
@@ -24,6 +27,17 @@
     }
     &:nth-child(3):hover {
       height: 300px;
+    }
+    & {
+      &::first-line {
+        font-size: var(--s1);
+      }
+      ul {
+        padding: 0;
+      }
+      @media screen and (min-width: 1000px) {
+        font-size: var(--s0);
+      }
     }
     li {
       list-style: none;
