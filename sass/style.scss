@@ -51,6 +51,24 @@ h1 {
   animation: textclip 4s linear infinite;
 }
 
+header {
+  margin-bottom: 80px;
+}
+
+header h1,
+header h2 {
+  text-align: center;
+}
+
+header h1 {
+  font-size: var(--s4);
+  margin-bottom: 20px;
+}
+
+header h2 {
+  margin-top: 10px;
+}
+
 footer {
   padding: 10px 20%;
   display: flex;

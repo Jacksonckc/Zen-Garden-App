@@ -3,25 +3,6 @@
 @forward 'sidebar';
 @forward 'astronaut';
 
-header {
-  margin-bottom: 80px;
-}
-
-header h1,
-header h2 {
-  text-align: right;
-  margin-right: 10%;
-}
-
-header h1 {
-  font-size: 80px;
-  margin-bottom: 20px;
-}
-
-header h2 {
-  margin-top: 10px;
-}
-
 .summary {
   position: relative;
   background-color: #0e171c;
@@ -31,8 +12,6 @@ header h2 {
 .summary p {
   text-align: center;
   margin: 12px 10%;
-  
-  
 }
 .summary p:nth-child(2) {
   margin-top: 10px;
