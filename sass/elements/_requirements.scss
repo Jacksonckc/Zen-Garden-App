@@ -88,25 +88,24 @@
     }
   }
 
-  p:nth-of-type(1) {
-    grid-area: one;
-  }
+  $areas: (
+    1: one,
+    2: two,
+    3: three,
+    4: four,
+    5: footer,
+  );
 
-  p:nth-of-type(2) {
-    grid-area: two;
-  }
-
-  p:nth-of-type(3) {
-    grid-area: three;
-    align-self: center;
-  }
-
-  p:nth-of-type(4) {
-    grid-area: four;
+  @each $child, $area in $areas {
+    p:nth-of-type(#{$child}) {
+      grid-area: $area;
+    }
   }
 
   p:nth-of-type(5) {
-    grid-area: footer;
+    font-size: var(--s0);
+    font-style: italic;
+    max-width: 100%;
   }
 
   &::before {
