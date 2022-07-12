@@ -18,7 +18,10 @@
       margin-top: 50px;
     }
     @media screen and (min-width: 1000px) {
-      height: calc(var(--s2) + 50px);
+      height: var(--s2);
+      h3 {
+        margin-top: 0;
+      }
       & {
         margin-bottom: 100px;
         transition: 3s ease;
