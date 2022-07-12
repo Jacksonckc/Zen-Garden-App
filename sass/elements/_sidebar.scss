@@ -13,8 +13,18 @@
     height: var(--s2);
     overflow: hidden;
     transition: 3s ease;
-    &:hover {
-      height: 800px;
+    &:first-child:hover {
+      height: 400px;
+      @media screen and (min-width: 800px) {
+        height: 800px;
+      }
+    }
+    &:nth-child(2):hover {
+      height: 200px;
+    }
+
+    &:nth-child(3):hover {
+      height: 300px;
     }
     li {
       list-style: none;
