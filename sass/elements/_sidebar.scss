@@ -1,6 +1,6 @@
 .wrapper {
   padding-top: 50px;
-  padding-bottom: 200px;
+  padding-left: 50px;
   display: grid;
   grid-template-columns: repeat(3, 350px);
   @media screen and (max-width: 1000px) {
@@ -13,30 +13,27 @@
   background-position: center;
   > * {
     text-align: center;
-    height: var(--s2);
     overflow: hidden;
-    transition: 3s ease;
-    &:first-child:hover {
-      height: 400px;
-      @media screen and (min-width: 1000px) {
+    h3 {
+      margin-top: 50px;
+    }
+    @media screen and (min-width: 1000px) {
+      height: calc(var(--s2) + 50px);
+      & {
+        margin-bottom: 100px;
+        transition: 3s ease;
+        &::first-line {
+          font-size: var(--s1);
+        }
+        ul {
+          padding: 0;
+        }
+        @media screen and (min-width: 1000px) {
+          font-size: var(--s0);
+        }
+      }
+      &:hover {
         height: 400px;
-      }
-    }
-    &:nth-child(2):hover {
-      height: 200px;
-    }
-    &:nth-child(3):hover {
-      height: 300px;
-    }
-    & {
-      &::first-line {
-        font-size: var(--s1);
-      }
-      ul {
-        padding: 0;
-      }
-      @media screen and (min-width: 1000px) {
-        font-size: var(--s0);
       }
     }
     li {
