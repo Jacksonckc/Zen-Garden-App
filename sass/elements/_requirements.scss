@@ -65,6 +65,7 @@
     grid-area: header;
     text-align: center;
     font-size: var(--s2);
+    // The container has inline padding, using a negative margin pushes it out to full width
     margin-inline: calc(0px - var(--s0));
     @include breakpoints.medium {
       margin-inline: calc(0px - var(--s1));

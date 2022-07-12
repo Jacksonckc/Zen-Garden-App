@@ -5,13 +5,14 @@
 
 .summary {
   position: relative;
-  background-color: #0e171c;
+  font-size: var(--s0);
+  margin-inline: var(--s-2);
   opacity: 80%;
   padding: 40px 0 40px 0;
+  font-style: italic;
 }
 .summary p {
   text-align: center;
-  margin: 12px 10%;
 }
 .summary p:nth-child(2) {
   margin-top: 10px;

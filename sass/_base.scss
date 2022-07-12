@@ -1,3 +1,6 @@
+@use 'breakpoints';
+@use 'variables' as *;
+
 .page-wrapper {
   background-image: url('./Img/stars-background.jpeg');
   background-repeat: repeat-x;
@@ -6,4 +9,19 @@
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
+}
+
+.preamble {
+  max-width: 100%;
+  padding-inline: 0.5rem;
+
+  font-size: 1.25rem;
+
+  @include breakpoints.medium {
+    font-size: var(--s1);
+  }
+}
+
+.intro {
+  background: linear-gradient(to bottom, #0e171c 50vh, transparent);
 }
